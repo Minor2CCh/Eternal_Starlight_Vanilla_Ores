@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "eternal_starlight_vo",
+  "version": "${version}",
+  "name": "Eternal Starlight Vanilla Ores",
+  "description": "Add vanilla ore to Eternal Starlight dimension.",
+  "authors": ["Minor2CCh"],
+  "contact": {},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.Minor2CCh.eternal_starlight_vo.client.Eternal_starlight_voClient"
+    ],
+    "main": [
+      "com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "eternal_starlight": ">=0.4.0",
+    "minecraft": "${minecraft_version}"
+  }
+}

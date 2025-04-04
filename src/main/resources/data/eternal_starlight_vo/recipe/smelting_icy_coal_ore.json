@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.1,
+  "group": "coal",
+  "ingredient": {
+    "tag": "eternal_starlight_vo:icy_coal_ores"
+  },
+  "result": {
+    "id": "minecraft:coal"
+  }
+}

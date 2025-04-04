@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 0.2,
+  "group": "lapis_lazuli",
+  "ingredient": {
+    "tag": "eternal_starlight_vo:icy_lapis_ores"
+  },
+  "result": {
+    "id": "minecraft:lapis_lazuli"
+  }
+}
