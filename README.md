@@ -23,3 +23,22 @@ Eternal Ice and Haze Ice take slightly longer to refine than the other types.
 ## Extra Diamond
 - Crystallized Desert
   
+# Reduce Ore Config (After 1.1.0)
+
+## Fabric
+
+Open the file “eternal_starlight_vo.json” in the config directory and change the parameters to reduce ore production.
+ReduceOres“ (default:false) reduces the frequency of pure ore production, while ”ExtraOrePerBiome" (default:true) can be used to increase the production of some ores in a characteristic biome.
+
+## NeoForge
+
+The amount of ore produced can be reduced by applying the datapack attached to the project page. The contents of each pack are as follows
+
+ - lite.zip 
+Reduces the amount of ore produced.
+
+ - non_extra.zip 
+It will no longer increase the amount of ore per biome.
+
+- lite_non_extra.zip 
+Reduces the amount of ore produced and eliminates the increase in ore per biome.
