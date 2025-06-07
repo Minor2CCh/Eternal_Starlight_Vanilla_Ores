@@ -1,5 +1,6 @@
 package com.Minor2CCh.eternal_starlight_vo;
 
+import com.Minor2CCh.eternal_starlight_vo.config.StarlightConfig;
 import net.fabricmc.api.ModInitializer;
 
 public class Eternal_starlight_vo implements ModInitializer {
@@ -7,6 +8,8 @@ public class Eternal_starlight_vo implements ModInitializer {
     @Override
     public void onInitialize() {
         OreBlocks.initialize();
+
+        StarlightConfig.initialize();
         StarlightGenerateOres.initialize();
     }
 }
