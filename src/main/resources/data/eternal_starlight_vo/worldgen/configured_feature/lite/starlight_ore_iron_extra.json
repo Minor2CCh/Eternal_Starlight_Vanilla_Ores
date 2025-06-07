@@ -1,0 +1,45 @@
+{
+  "type": "minecraft:ore",
+  "config": {
+    "discard_chance_on_air_exposure": 0.125,
+    "size": 5,
+    "targets": [
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:grimstone_iron_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:grimstone"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:voidstone_iron_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:voidstone"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:eternal_ice_iron_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:eternal_ice"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:haze_ice_iron_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:haze_ice"
+        }
+      }
+    ]
+  }
+}

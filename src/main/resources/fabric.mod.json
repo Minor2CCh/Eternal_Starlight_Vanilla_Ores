@@ -5,7 +5,10 @@
   "name": "Eternal Starlight Vanilla Ores",
   "description": "Add vanilla ore to Eternal Starlight dimension.",
   "authors": ["Minor2CCh"],
-  "contact": {},
+  "contact": {
+    "homepage": "https://modrinth.com/project/eternal-starlight-vo",
+    "issues": "https://github.com/Minor2CCh/Eternal_Starlight_Vanilla_Ores/issues",
+    "sources": "https://github.com/Minor2CCh/Eternal_Starlight_Vanilla_Ores"},
   "license": "MIT",
   "icon": "icon.png",
   "environment": "*",
