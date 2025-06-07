@@ -34,11 +34,14 @@ ReduceOres“ (default:false) reduces the frequency of pure ore production, whil
 
 The amount of ore produced can be reduced by applying the datapack attached to the project page. The contents of each pack are as follows
 
- - lite.zip 
+ - lite.zip
+
 Reduces the amount of ore produced.
 
- - non_extra.zip 
+ - non_extra.zip
+
 It will no longer increase the amount of ore per biome.
 
-- lite_non_extra.zip 
+- lite_non_extra.zip
+
 Reduces the amount of ore produced and eliminates the increase in ore per biome.
