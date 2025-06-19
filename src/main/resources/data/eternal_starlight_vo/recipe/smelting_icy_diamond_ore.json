@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 1.0,
+  "group": "diamond",
+  "ingredient": {
+    "tag": "eternal_starlight_vo:icy_diamond_ores"
+  },
+  "result": {
+    "id": "minecraft:diamond"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:in_eternal_starlight",
+  "features": [
+    "eternal_starlight_vo:starlight_ore_emerald"
+  ],
+  "step": "underground_ores"
+}

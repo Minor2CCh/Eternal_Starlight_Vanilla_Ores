@@ -1,0 +1,10 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:in_eternal_starlight",
+  "features": [
+    "eternal_starlight_vo:starlight_ore_iron_middle",
+    "eternal_starlight_vo:starlight_ore_iron_small",
+    "eternal_starlight_vo:starlight_ore_iron_upper"
+  ],
+  "step": "underground_ores"
+}
