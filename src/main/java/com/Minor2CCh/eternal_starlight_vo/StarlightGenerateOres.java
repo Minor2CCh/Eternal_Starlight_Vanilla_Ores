@@ -1,6 +1,6 @@
 package com.Minor2CCh.eternal_starlight_vo;
 
-import com.Minor2CCh.eternal_starlight_vo.config.StarlightConfig;
+import com.Minor2CCh.eternal_starlight_vo.config.StarlightConfigLoader;
 import com.Minor2CCh.eternal_starlight_vo.tag.StarLightBiomeTag;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -26,6 +26,7 @@ public class StarlightGenerateOres {
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_BURIED_ORE_PLACED_KEY = register("starlight_ore_diamond_buried");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_LARGE_ORE_PLACED_KEY = register("starlight_ore_diamond_large");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_MEDIUM_ORE_PLACED_KEY = register("starlight_ore_diamond_medium");
+    public static final RegistryKey<PlacedFeature> STARLIGHT_QUARTZ_ORE_PLACED_KEY = register("starlight_ore_quartz");
     public static final RegistryKey<PlacedFeature> STARLIGHT_IRON_ORE_EXTRA_PLACED_KEY = register("starlight_ore_iron_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_COAL_ORE_EXTRA_PLACED_KEY = register("starlight_ore_coal_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_COPPER_ORE_EXTRA_PLACED_KEY = register("starlight_ore_copper_extra");
@@ -34,6 +35,7 @@ public class StarlightGenerateOres {
     public static final RegistryKey<PlacedFeature> STARLIGHT_EMERALD_ORE_EXTRA_PLACED_KEY = register("starlight_ore_emerald_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_ORE_EXTRA_PLACED_KEY = register("starlight_ore_diamond_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_ORE_EXTRA2_PLACED_KEY = register("starlight_ore_diamond_extra2");
+    public static final RegistryKey<PlacedFeature> STARLIGHT_QUARTZ_ORE_EXTRA_PLACED_KEY = register("starlight_ore_quartz_extra");
 
     public static final RegistryKey<PlacedFeature> STARLIGHT_IRON_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_iron");
     public static final RegistryKey<PlacedFeature> STARLIGHT_COAL_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_coal");
@@ -42,6 +44,7 @@ public class StarlightGenerateOres {
     public static final RegistryKey<PlacedFeature> STARLIGHT_LAPIS_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_lapis");
     public static final RegistryKey<PlacedFeature> STARLIGHT_EMERALD_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_emerald");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_diamond");
+    public static final RegistryKey<PlacedFeature> STARLIGHT_QUARTZ_ORE_PLACED_KEY_LITE = register("lite/starlight_ore_quartz");
     public static final RegistryKey<PlacedFeature> STARLIGHT_IRON_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_iron_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_COAL_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_coal_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_COPPER_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_copper_extra");
@@ -49,6 +52,7 @@ public class StarlightGenerateOres {
     public static final RegistryKey<PlacedFeature> STARLIGHT_LAPIS_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_lapis_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_EMERALD_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_emerald_extra");
     public static final RegistryKey<PlacedFeature> STARLIGHT_DIAMOND_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_diamond_extra");
+    public static final RegistryKey<PlacedFeature> STARLIGHT_QUARTZ_ORE_EXTRA_PLACED_KEY_LITE = register("lite/starlight_ore_quartz_extra");
 
     public static RegistryKey<PlacedFeature> register(String id) {
         Identifier oreID = Identifier.of(Eternal_starlight_vo.MOD_ID, id);
@@ -57,7 +61,7 @@ public class StarlightGenerateOres {
     }
     public static void initialize() {
         //default
-        if(!StarlightConfig.getBoolean("ReduceOres", false)){
+        if(!StarlightConfigLoader.getConfig().ReduceOres){
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_IRON_ORE_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_IRON_ORE_SMALL_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_IRON_ORE_UPPER_PLACED_KEY);
@@ -73,7 +77,10 @@ public class StarlightGenerateOres {
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_BURIED_ORE_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_LARGE_ORE_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_MEDIUM_ORE_PLACED_KEY);
-            if(StarlightConfig.getBoolean("ExtraOrePerBiome", true)){
+            if(StarlightConfigLoader.getConfig().GenerateQuartz) {
+                BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_QUARTZ_ORE_PLACED_KEY);
+            }
+            if(StarlightConfigLoader.getConfig().ExtraOrePerBiome){
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_IRON_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_IRON_ORE_EXTRA_PLACED_KEY);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_COAL_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_COAL_ORE_EXTRA_PLACED_KEY);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_COPPER_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_COPPER_ORE_EXTRA_PLACED_KEY);
@@ -82,6 +89,9 @@ public class StarlightGenerateOres {
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_EMERALD_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_EMERALD_ORE_EXTRA_PLACED_KEY);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_DIAMOND_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_ORE_EXTRA_PLACED_KEY);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_DIAMOND_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_ORE_EXTRA2_PLACED_KEY);
+                if(StarlightConfigLoader.getConfig().GenerateQuartz) {
+                    BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_QUARTZ_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_QUARTZ_ORE_EXTRA_PLACED_KEY);
+                }
             }
         //reduce version
         }else{
@@ -92,8 +102,10 @@ public class StarlightGenerateOres {
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_LAPIS_ORE_PLACED_KEY_LITE);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_EMERALD_ORE_PLACED_KEY_LITE);
             BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_ORE_PLACED_KEY_LITE);
-
-            if(StarlightConfig.getBoolean("ExtraOrePerBiome", true)) {
+            if(StarlightConfigLoader.getConfig().GenerateQuartz) {
+                BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.IN_ETERNAL_STARLIGHT), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_QUARTZ_ORE_PLACED_KEY_LITE);
+            }
+            if(StarlightConfigLoader.getConfig().ExtraOrePerBiome) {
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_IRON_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_IRON_ORE_EXTRA_PLACED_KEY_LITE);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_COAL_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_COAL_ORE_EXTRA_PLACED_KEY_LITE);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_COPPER_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_COPPER_ORE_EXTRA_PLACED_KEY_LITE);
@@ -101,6 +113,9 @@ public class StarlightGenerateOres {
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_LAPIS_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_LAPIS_ORE_EXTRA_PLACED_KEY_LITE);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_EMERALD_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_EMERALD_ORE_EXTRA_PLACED_KEY_LITE);
                 BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_DIAMOND_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_DIAMOND_ORE_EXTRA_PLACED_KEY_LITE);
+                if(StarlightConfigLoader.getConfig().GenerateQuartz) {
+                    BiomeModifications.addFeature(BiomeSelectors.tag(StarLightBiomeTag.EXTRA_QUARTZ_ORE), GenerationStep.Feature.UNDERGROUND_ORES, STARLIGHT_QUARTZ_ORE_EXTRA_PLACED_KEY_LITE);
+                }
             }
         }
     }

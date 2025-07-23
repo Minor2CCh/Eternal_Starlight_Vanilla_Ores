@@ -1,6 +1,6 @@
 package com.Minor2CCh.eternal_starlight_vo;
 
-import com.Minor2CCh.eternal_starlight_vo.config.StarlightConfig;
+import com.Minor2CCh.eternal_starlight_vo.config.StarlightConfigLoader;
 import net.fabricmc.api.ModInitializer;
 
 public class Eternal_starlight_vo implements ModInitializer {
@@ -9,7 +9,7 @@ public class Eternal_starlight_vo implements ModInitializer {
     public void onInitialize() {
         OreBlocks.initialize();
 
-        StarlightConfig.initialize();
+        StarlightConfigLoader.load();
         StarlightGenerateOres.initialize();
     }
 }
