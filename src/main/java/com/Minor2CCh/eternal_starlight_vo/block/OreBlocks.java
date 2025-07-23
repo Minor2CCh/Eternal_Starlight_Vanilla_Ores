@@ -7,6 +7,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
 import net.neoforged.neoforge.registries.DeferredBlock;
 
@@ -125,6 +126,22 @@ public class OreBlocks {
     public static final DeferredBlock<Block> HAZE_ICE_DIAMOND_ORE =
             registerBlock("haze_ice_diamond_ore",
                     () -> new DropExperienceBlock(UniformInt.of(3, 7),BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE).sound(SoundType.GLASS).mapColor(MapColor.ICE))
+                    , new Item.Properties());
+    public static final DeferredBlock<Block> GRIMSTONE_QUARTZ_ORE =
+            registerBlock("grimstone_quartz_ore",
+                    () -> new DropExperienceBlock(UniformInt.of(2, 5),BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 3.0F))
+                    , new Item.Properties());
+    public static final DeferredBlock<Block> VOIDSTONE_QUARTZ_ORE =
+            registerBlock("voidstone_quartz_ore",
+                    () -> new DropExperienceBlock(UniformInt.of(2, 5),BlockBehaviour.Properties.ofFullCopy(GRIMSTONE_QUARTZ_ORE.get()).mapColor(MapColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE))
+                    , new Item.Properties());
+    public static final DeferredBlock<Block> ETERNAL_ICE_QUARTZ_ORE =
+            registerBlock("eternal_ice_quartz_ore",
+                    () -> new DropExperienceBlock(UniformInt.of(2, 5),BlockBehaviour.Properties.ofFullCopy(GRIMSTONE_QUARTZ_ORE.get()).sound(SoundType.GLASS).mapColor(MapColor.ICE))
+                    , new Item.Properties());
+    public static final DeferredBlock<Block> HAZE_ICE_QUARTZ_ORE =
+            registerBlock("haze_ice_quartz_ore",
+                    () -> new DropExperienceBlock(UniformInt.of(2, 5),BlockBehaviour.Properties.ofFullCopy(VOIDSTONE_QUARTZ_ORE.get()).sound(SoundType.GLASS).mapColor(MapColor.ICE))
                     , new Item.Properties());
 
     public static void initialize(){

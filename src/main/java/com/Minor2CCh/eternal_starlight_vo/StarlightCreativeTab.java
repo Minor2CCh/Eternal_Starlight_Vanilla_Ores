@@ -46,6 +46,10 @@ public class StarlightCreativeTab {
                         output.accept(OreBlocks.VOIDSTONE_DIAMOND_ORE.get());
                         output.accept(OreBlocks.ETERNAL_ICE_DIAMOND_ORE.get());
                         output.accept(OreBlocks.HAZE_ICE_DIAMOND_ORE.get());
+                        output.accept(OreBlocks.GRIMSTONE_QUARTZ_ORE.get());
+                        output.accept(OreBlocks.VOIDSTONE_QUARTZ_ORE.get());
+                        output.accept(OreBlocks.ETERNAL_ICE_QUARTZ_ORE.get());
+                        output.accept(OreBlocks.HAZE_ICE_QUARTZ_ORE.get());
                     }).build());
     public static void initialize(IEventBus modEventBus){
         CREATIVE_MODE_TABS.register(modEventBus);
