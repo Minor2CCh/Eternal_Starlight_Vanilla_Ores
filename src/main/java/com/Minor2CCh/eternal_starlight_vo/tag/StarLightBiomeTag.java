@@ -15,6 +15,7 @@ public class StarLightBiomeTag {
     public static final TagKey<Biome> EXTRA_LAPIS_ORE = of("extra_lapis_ore");
     public static final TagKey<Biome> EXTRA_EMERALD_ORE = of("extra_emerald_ore");
     public static final TagKey<Biome> EXTRA_DIAMOND_ORE = of("extra_diamond_ore");
+    public static final TagKey<Biome> EXTRA_QUARTZ_ORE = of("extra_quartz_ore");
     private StarLightBiomeTag() {
     }
 

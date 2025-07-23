@@ -141,6 +141,24 @@ public class OreBlocks {
                     AbstractBlock.Settings.copy(Blocks.DEEPSLATE_DIAMOND_ORE)
                             .mapColor(MapColor.PALE_PURPLE).sounds(BlockSoundGroup.GLASS)),
             "haze_ice_diamond_ore", true);
+    public static final Block GRIMSTONE_QUARTZ_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.create().mapColor(MapColor.STONE_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().strength(3.0F, 3.0F)),
+            "grimstone_quartz_ore", true);
+    public static final Block VOIDSTONE_QUARTZ_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.copy(GRIMSTONE_QUARTZ_ORE).mapColor(MapColor.DEEPSLATE_GRAY).strength(4.5F, 3.0F).sounds(BlockSoundGroup.DEEPSLATE)),
+            "voidstone_quartz_ore", true);
+    public static final Block ETERNAL_ICE_QUARTZ_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.copy(GRIMSTONE_QUARTZ_ORE)
+                            .mapColor(MapColor.PALE_PURPLE).sounds(BlockSoundGroup.GLASS)),
+            "eternal_ice_quartz_ore", true);
+    public static final Block HAZE_ICE_QUARTZ_ORE = register(
+            new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
+                    AbstractBlock.Settings.copy(VOIDSTONE_QUARTZ_ORE)
+                            .mapColor(MapColor.PALE_PURPLE).sounds(BlockSoundGroup.GLASS)),
+            "haze_ice_quartz_ore", true);
     public static final RegistryKey<ItemGroup> ETERNAL_STARLIGHT_VO_ITEM_GROUP_KEY = RegistryKey.of(Registries.ITEM_GROUP.getKey(), Identifier.of(Eternal_starlight_vo.MOD_ID, "minium_item_group"));
     public static final ItemGroup ETERNAL_STARLIGHT_VO_ITEM_GROUP = FabricItemGroup.builder()
             .icon(() -> new ItemStack(VOIDSTONE_EMERALD_ORE))
@@ -192,6 +210,10 @@ public class OreBlocks {
             itemGroup.add(VOIDSTONE_DIAMOND_ORE);
             itemGroup.add(ETERNAL_ICE_DIAMOND_ORE);
             itemGroup.add(HAZE_ICE_DIAMOND_ORE);
+            itemGroup.add(GRIMSTONE_QUARTZ_ORE);
+            itemGroup.add(VOIDSTONE_QUARTZ_ORE);
+            itemGroup.add(ETERNAL_ICE_QUARTZ_ORE);
+            itemGroup.add(HAZE_ICE_QUARTZ_ORE);
 
         });
 
