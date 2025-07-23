@@ -22,13 +22,17 @@ Eternal Ice and Haze Ice take slightly longer to refine than the other types.
 - Starlight Permafrost Forest
 ## Extra Diamond
 - Crystallized Desert
+## Extra Quartz
+- Ether River
+- Shimmer River
   
 # Reduce Ore Config (After 1.1.0)
 
 ## Fabric
 
-Open the file “eternal_starlight_vo.json” in the config directory and change the parameters to reduce ore production.
-ReduceOres“ (default:false) reduces the frequency of pure ore production, while ”ExtraOrePerBiome" (default:true) can be used to increase the production of some ores in a characteristic biome.
+Open the file "eternal_starlight_vo.json" in the config directory and change the parameters to reduce ore production.
+"ReduceOres" (default:false) reduces the frequency of pure ore production, while "ExtraOrePerBiome" (default:true) can be used to increase the production of some ores in a characteristic biome.
+"GenerateQuartz"(default:true) can be set to false to disable quartz generation. (After1.2.0)
 
 ## NeoForge
 
