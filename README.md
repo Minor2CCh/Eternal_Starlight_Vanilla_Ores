@@ -1,5 +1,5 @@
 # About
-This is an unofficial add-on to [Eternal Starlight](https://modrinth.com/mod/eternal-starlight) that produces seven vanilla ores in addition to redstone ores in the Eternal Starlight Dimension underground.
+This is an unofficial add-on to [Eternal Starlight](https://modrinth.com/mod/eternal-starlight) that produces eight vanilla ores in addition to redstone ores in the Eternal Starlight Dimension underground.
 With this mod, you can increase the amount of resources you can acquire by exploring Eternal Starlight's underground.
 Also, even if you have acquired a lot of ore in the overworld and your ore resources are depleted, you can acquire vanilla ore again as a side trip in your search for Eternal Starlight.
 
