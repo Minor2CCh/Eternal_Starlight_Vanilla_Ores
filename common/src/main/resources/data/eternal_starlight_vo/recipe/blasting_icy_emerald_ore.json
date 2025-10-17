@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 1.0,
+  "group": "emerald",
+  "ingredient": {
+    "tag": "eternal_starlight_vo:icy_emerald_ores"
+  },
+  "result": {
+    "id": "minecraft:emerald"
+  }
+}

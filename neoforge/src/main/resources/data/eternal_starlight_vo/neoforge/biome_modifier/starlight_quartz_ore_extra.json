@@ -1,0 +1,8 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:extra_quartz_ore",
+  "features": [
+    "eternal_starlight_vo:starlight_ore_quartz_extra"
+  ],
+  "step": "underground_ores"
+}

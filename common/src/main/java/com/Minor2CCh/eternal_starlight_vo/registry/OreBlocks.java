@@ -1,0 +1,134 @@
+package com.Minor2CCh.eternal_starlight_vo.registry;
+
+import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+
+import java.util.function.Supplier;
+
+public class OreBlocks {
+    public static Supplier<Block> GRIMSTONE_IRON_ORE = registerBlock(
+            "grimstone_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
+    public static final Supplier<Block> VOIDSTONE_IRON_ORE = registerBlock(
+            "voidstone_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_IRON_ORE = registerBlock(
+            "eternal_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_IRON_ORE = registerBlock(
+            "haze_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_COAL_ORE = registerBlock(
+            "grimstone_coal_ore", () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
+    public static final Supplier<Block> VOIDSTONE_COAL_ORE = registerBlock("voidstone_coal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COAL_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_COAL_ORE = registerBlock("eternal_ice_coal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_COAL_ORE = registerBlock("haze_ice_coal_ore",
+            () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COAL_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_COPPER_ORE = registerBlock("grimstone_copper_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_ORE)));
+    public static final Supplier<Block> VOIDSTONE_COPPER_ORE = registerBlock("voidstone_copper_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COPPER_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_COPPER_ORE = registerBlock("eternal_ice_copper_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_COPPER_ORE = registerBlock("haze_ice_copper_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COPPER_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_GOLD_ORE = registerBlock("grimstone_gold_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_ORE)));
+    public static final Supplier<Block> VOIDSTONE_GOLD_ORE = registerBlock("voidstone_gold_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_GOLD_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_GOLD_ORE = registerBlock("eternal_ice_gold_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_GOLD_ORE = registerBlock("haze_ice_gold_ore",
+            () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_GOLD_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_LAPIS_ORE = registerBlock("grimstone_lapis_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE)));
+    public static final Supplier<Block> VOIDSTONE_LAPIS_ORE = registerBlock("voidstone_lapis_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_LAPIS_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_LAPIS_ORE = registerBlock("eternal_ice_lapis_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_LAPIS_ORE = registerBlock("haze_ice_lapis_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_LAPIS_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_EMERALD_ORE = registerBlock("grimstone_emerald_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE)));
+    public static final Supplier<Block> VOIDSTONE_EMERALD_ORE = registerBlock("voidstone_emerald_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_EMERALD_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_EMERALD_ORE = registerBlock("eternal_ice_emerald_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_EMERALD_ORE = registerBlock("haze_ice_emerald_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_EMERALD_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_DIAMOND_ORE = registerBlock("grimstone_diamond_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
+    public static final Supplier<Block> VOIDSTONE_DIAMOND_ORE = registerBlock("voidstone_diamond_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+    public static final Supplier<Block> ETERNAL_ICE_DIAMOND_ORE = registerBlock("eternal_ice_diamond_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_DIAMOND_ORE = registerBlock("haze_ice_diamond_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> GRIMSTONE_QUARTZ_ORE = registerBlock("grimstone_quartz_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
+    public static final Supplier<Block> VOIDSTONE_QUARTZ_ORE = registerBlock("voidstone_quartz_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(GRIMSTONE_QUARTZ_ORE.get()).mapColor(MapColor.DEEPSLATE).strength(4.5F, 3.0F).sound(SoundType.DEEPSLATE)));
+    public static final Supplier<Block> ETERNAL_ICE_QUARTZ_ORE = registerBlock("eternal_ice_quartz_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(GRIMSTONE_QUARTZ_ORE.get())
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> HAZE_ICE_QUARTZ_ORE = registerBlock("haze_ice_quartz_ore",
+            () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(VOIDSTONE_QUARTZ_ORE.get())
+                            .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    private static <T extends Block> Supplier<T> registerBlock(String id, Supplier<T> block){
+        return Eternal_starlight_vo.PLATFORM.blockRegister(id, block);
+    }
+    public static void init(){
+    }
+}

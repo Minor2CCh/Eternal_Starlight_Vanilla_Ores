@@ -1,0 +1,12 @@
+/common/.gradle/
+/common/build/
+/fabric/run/
+/fabric/build/
+/fabric/.gradle/
+/.gradle/
+/build/
+/.idea/
+/neoforge/run/
+/neoforge/datapacks/
+/neoforge/build/
+/neoforge/.gradle/

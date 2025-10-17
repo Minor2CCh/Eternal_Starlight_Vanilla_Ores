@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "eternal_starlight_vo",
+  "version": "${version}",
+  "name": "Eternal Starlight Vanilla Ores",
+  "description": "Add vanilla ores to Eternal Starlight Dimension.",
+  "authors": [
+    "Minor2CCh"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/project/eternal-starlight-vo",
+    "issues": "https://github.com/Minor2CCh/Eternal_Starlight_Vanilla_Ores/issues",
+    "sources": "https://github.com/Minor2CCh/Eternal_Starlight_Vanilla_Ores"
+},
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.Minor2CCh.eternal_starlight_vo.fabric.Eternal_starlight_voFabric"
+    ],
+    "client": [
+      "com.Minor2CCh.eternal_starlight_vo.fabric.client.Eternal_starlight_voFabricClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "1.21.1",
+    "java": ">=21",
+    "fabric-api": "*",
+    "eternal_starlight": ">=0.6.0"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

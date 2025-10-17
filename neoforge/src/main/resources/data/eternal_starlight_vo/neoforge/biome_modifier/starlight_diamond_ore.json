@@ -1,0 +1,11 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:in_eternal_starlight",
+  "features": [
+    "eternal_starlight_vo:starlight_ore_diamond",
+    "eternal_starlight_vo:starlight_ore_diamond_buried",
+    "eternal_starlight_vo:starlight_ore_diamond_large",
+    "eternal_starlight_vo:starlight_ore_diamond_medium"
+  ],
+  "step": "underground_ores"
+}

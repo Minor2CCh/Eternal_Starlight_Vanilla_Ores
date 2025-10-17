@@ -1,0 +1,33 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "eternal_starlight_vo:haze_ice_quartz_ore"
+    }
+  ],
+  "processing_time": 350,
+  "results": [
+    {
+      "count": 3,
+      "id": "minecraft:quartz"
+    },
+    {
+      "chance": 0.125,
+      "id": "minecraft:quartz"
+    },
+    {
+      "chance": 0.75,
+      "id": "create:experience_nugget"
+    },
+    {
+      "chance": 0.125,
+      "id": "eternal_starlight:haze_ice"
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ]
+}
