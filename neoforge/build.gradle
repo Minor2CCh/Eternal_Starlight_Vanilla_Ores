@@ -33,7 +33,7 @@ repositories {
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
-    implementation "curse.maven:eternal-starlight-1080592:7106675"
+    implementation "curse.maven:eternal-starlight-1080592:7117398"
 
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
