@@ -4,5 +4,14 @@
   "features": [
     "eternal_starlight_vo:starlight_ore_emerald"
   ],
-  "step": "underground_ores"
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "eternal_starlight_vo:config_flag",
+        "flag": "ReduceOres"
+      }
+    }
+  ]
 }

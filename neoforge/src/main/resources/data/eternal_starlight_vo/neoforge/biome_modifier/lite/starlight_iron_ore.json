@@ -1,0 +1,14 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:in_eternal_starlight",
+  "features": [
+    "eternal_starlight_vo:lite/starlight_ore_iron"
+  ],
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "eternal_starlight_vo:config_flag",
+      "flag": "ReduceOres"
+    }
+  ]
+}

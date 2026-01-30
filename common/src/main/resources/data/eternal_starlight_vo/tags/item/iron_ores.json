@@ -1,6 +1,8 @@
 {
   "values": [
     "eternal_starlight_vo:grimstone_iron_ore",
-    "eternal_starlight_vo:voidstone_iron_ore"
+    "eternal_starlight_vo:voidstone_iron_ore",
+    "eternal_starlight_vo:nightfall_mud_iron_ore",
+    "eternal_starlight_vo:packed_nightfall_mud_iron_ore"
   ]
 }

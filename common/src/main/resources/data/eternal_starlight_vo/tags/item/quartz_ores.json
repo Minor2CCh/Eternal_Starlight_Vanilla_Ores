@@ -1,6 +1,8 @@
 {
   "values": [
     "eternal_starlight_vo:grimstone_quartz_ore",
-    "eternal_starlight_vo:voidstone_quartz_ore"
+    "eternal_starlight_vo:voidstone_quartz_ore",
+    "eternal_starlight_vo:nightfall_mud_quartz_ore",
+    "eternal_starlight_vo:packed_nightfall_mud_quartz_ore"
   ]
 }

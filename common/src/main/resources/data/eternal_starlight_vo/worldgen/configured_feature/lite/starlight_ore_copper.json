@@ -39,6 +39,24 @@
           "predicate_type": "minecraft:block_match",
           "block": "eternal_starlight:haze_ice"
         }
+      },
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:nightfall_mud_copper_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:nightfall_mud"
+        }
+      },
+      {
+        "state": {
+          "Name": "eternal_starlight_vo:packed_nightfall_mud_copper_ore"
+        },
+        "target": {
+          "predicate_type": "minecraft:block_match",
+          "block": "eternal_starlight:packed_nightfall_mud"
+        }
       }
     ]
   }

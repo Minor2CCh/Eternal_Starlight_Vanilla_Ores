@@ -3,6 +3,7 @@ package com.Minor2CCh.eternal_starlight_vo.fabric.platform;
 import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
 import com.Minor2CCh.eternal_starlight_vo.platform.ModPlatform;
 import com.Minor2CCh.eternal_starlight_vo.registry.StarlightCreativeModeTab;
+import com.google.auto.service.AutoService;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.core.Registry;
@@ -18,6 +19,7 @@ import java.nio.file.Path;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
+@AutoService(ModPlatform.class)
 public class FabricPlatform implements ModPlatform {
     @Override
     public ModLoader getModLoader() {

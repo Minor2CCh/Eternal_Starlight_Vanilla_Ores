@@ -28,7 +28,7 @@
     "minecraft": "1.21.1",
     "java": ">=21",
     "fabric-api": "*",
-    "eternal_starlight": ">0.5.1"
+    "eternal_starlight": ">0.6.3"
   },
   "suggests": {
     "another-mod": "*"
