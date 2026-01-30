@@ -1,5 +1,5 @@
 # About
-This is an unofficial add-on to [Eternal Starlight](https://modrinth.com/mod/eternal-starlight) that produces eight vanilla ores in addition to redstone ores in the Eternal Starlight Dimension underground.
+This is an unofficial add-on to [Eternal Starlight](https://github.com/LeoMinecraftModding/eternal-starlight) that produces eight vanilla ores in addition to redstone ores in the Eternal Starlight Dimension underground.
 With this mod, you can increase the amount of resources you can acquire by exploring Eternal Starlight's underground.
 Also, even if you have acquired a lot of ore in the overworld and your ore resources are depleted, you can acquire vanilla ore again as a side trip in your search for Eternal Starlight.
 
@@ -28,13 +28,13 @@ Eternal Ice and Haze Ice take slightly longer to refine than the other types.
   
 # Reduce Ore Config (After 1.1.0)
 
-## Fabric
+## Fabric / NeoForge(After 2.1.0)
 
 Open the file "eternal_starlight_vo.json" in the config directory and change the parameters to reduce ore production.
 "ReduceOres" (default:false) reduces the frequency of pure ore production, while "ExtraOrePerBiome" (default:true) can be used to increase the production of some ores in a characteristic biome.
 "GenerateQuartz"(default:true) can be set to false to disable quartz generation. (After1.2.0)
 
-## NeoForge
+## NeoForge(Before 2.0.0)
 
 The amount of ore produced can be reduced by applying the datapack attached to the project page. The contents of each pack are as follows
 
