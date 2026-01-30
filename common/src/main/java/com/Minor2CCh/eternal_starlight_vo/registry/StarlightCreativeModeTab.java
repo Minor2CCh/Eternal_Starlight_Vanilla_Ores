@@ -1,6 +1,7 @@
 package com.Minor2CCh.eternal_starlight_vo.registry;
 
 import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
+import com.Minor2CCh.eternal_starlight_vo.platform.ModPlatform;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
@@ -10,7 +11,7 @@ import java.util.function.Supplier;
 
 @SuppressWarnings("unused")
 public class StarlightCreativeModeTab {
-    public static final Supplier<CreativeModeTab> TAB_ETERNAL_STARLIGHT_VO = Eternal_starlight_vo.PLATFORM.creativeModeTabRegister(
+    public static final Supplier<CreativeModeTab> TAB_ETERNAL_STARLIGHT_VO = ModPlatform.INSTANCE.creativeModeTabRegister(
             "tab",
             () -> new ItemStack(OreItems.VOIDSTONE_EMERALD_ORE.get()),
             (parameters, output) ->{
@@ -18,34 +19,50 @@ public class StarlightCreativeModeTab {
                 output.accept(OreItems.VOIDSTONE_IRON_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_IRON_ORE.get());
                 output.accept(OreItems.HAZE_ICE_IRON_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_IRON_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_IRON_ORE.get());
                 output.accept(OreItems.GRIMSTONE_COAL_ORE.get());
                 output.accept(OreItems.VOIDSTONE_COAL_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_COAL_ORE.get());
                 output.accept(OreItems.HAZE_ICE_COAL_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_COAL_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_COAL_ORE.get());
                 output.accept(OreItems.GRIMSTONE_COPPER_ORE.get());
                 output.accept(OreItems.VOIDSTONE_COPPER_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_COPPER_ORE.get());
                 output.accept(OreItems.HAZE_ICE_COPPER_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_COPPER_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_COPPER_ORE.get());
                 output.accept(OreItems.GRIMSTONE_GOLD_ORE.get());
                 output.accept(OreItems.VOIDSTONE_GOLD_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_GOLD_ORE.get());
                 output.accept(OreItems.HAZE_ICE_GOLD_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_GOLD_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_GOLD_ORE.get());
                 output.accept(OreItems.GRIMSTONE_LAPIS_ORE.get());
                 output.accept(OreItems.VOIDSTONE_LAPIS_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_LAPIS_ORE.get());
                 output.accept(OreItems.HAZE_ICE_LAPIS_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_LAPIS_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_LAPIS_ORE.get());
                 output.accept(OreItems.GRIMSTONE_EMERALD_ORE.get());
                 output.accept(OreItems.VOIDSTONE_EMERALD_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_EMERALD_ORE.get());
                 output.accept(OreItems.HAZE_ICE_EMERALD_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_EMERALD_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_EMERALD_ORE.get());
                 output.accept(OreItems.GRIMSTONE_DIAMOND_ORE.get());
                 output.accept(OreItems.VOIDSTONE_DIAMOND_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_DIAMOND_ORE.get());
                 output.accept(OreItems.HAZE_ICE_DIAMOND_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_DIAMOND_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_DIAMOND_ORE.get());
                 output.accept(OreItems.GRIMSTONE_QUARTZ_ORE.get());
                 output.accept(OreItems.VOIDSTONE_QUARTZ_ORE.get());
                 output.accept(OreItems.ETERNAL_ICE_QUARTZ_ORE.get());
                 output.accept(OreItems.HAZE_ICE_QUARTZ_ORE.get());
+                output.accept(OreItems.NIGHTFALL_MUD_QUARTZ_ORE.get());
+                output.accept(OreItems.PACKED_NIGHTFALL_MUD_QUARTZ_ORE.get());
             }
 
     );

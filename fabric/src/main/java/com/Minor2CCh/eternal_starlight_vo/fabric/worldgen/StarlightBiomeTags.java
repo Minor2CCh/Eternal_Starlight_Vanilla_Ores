@@ -2,7 +2,6 @@ package com.Minor2CCh.eternal_starlight_vo.fabric.worldgen;
 
 import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
 import net.minecraft.core.registries.Registries;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.level.biome.Biome;
 
@@ -20,6 +19,6 @@ public class StarlightBiomeTags {
     }
 
     private static TagKey<Biome> of(String id) {
-        return TagKey.create(Registries.BIOME, ResourceLocation.fromNamespaceAndPath(Eternal_starlight_vo.MOD_ID, id));
+        return TagKey.create(Registries.BIOME, Eternal_starlight_vo.of(id));
     }
 }

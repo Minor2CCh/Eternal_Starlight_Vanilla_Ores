@@ -7,5 +7,14 @@
     "eternal_starlight_vo:starlight_ore_diamond_large",
     "eternal_starlight_vo:starlight_ore_diamond_medium"
   ],
-  "step": "underground_ores"
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "eternal_starlight_vo:config_flag",
+        "flag": "ReduceOres"
+      }
+    }
+  ]
 }

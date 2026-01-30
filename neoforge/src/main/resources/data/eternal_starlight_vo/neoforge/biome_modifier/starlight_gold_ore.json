@@ -5,5 +5,14 @@
     "eternal_starlight_vo:starlight_ore_gold",
     "eternal_starlight_vo:starlight_ore_gold_lower"
   ],
-  "step": "underground_ores"
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:not",
+      "value": {
+        "type": "eternal_starlight_vo:config_flag",
+        "flag": "ReduceOres"
+      }
+    }
+  ]
 }

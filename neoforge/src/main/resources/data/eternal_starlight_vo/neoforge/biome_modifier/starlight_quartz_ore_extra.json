@@ -4,5 +4,27 @@
   "features": [
     "eternal_starlight_vo:starlight_ore_quartz_extra"
   ],
-  "step": "underground_ores"
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "eternal_starlight_vo:config_flag",
+          "flag": "ExtraOrePerBiome"
+        },
+        {
+          "type": "neoforge:not",
+          "value": {
+            "type": "eternal_starlight_vo:config_flag",
+            "flag": "ReduceOres"
+          }
+        },
+        {
+          "type": "eternal_starlight_vo:config_flag",
+          "flag": "GenerateQuartz"
+        }
+      ]
+    }
+  ]
 }

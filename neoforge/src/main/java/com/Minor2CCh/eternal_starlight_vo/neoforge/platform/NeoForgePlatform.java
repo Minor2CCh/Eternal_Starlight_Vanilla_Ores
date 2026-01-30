@@ -3,6 +3,8 @@ package com.Minor2CCh.eternal_starlight_vo.neoforge.platform;
 import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
 import com.Minor2CCh.eternal_starlight_vo.platform.ModPlatform;
 import com.Minor2CCh.eternal_starlight_vo.registry.StarlightCreativeModeTab;
+import com.google.auto.service.AutoService;
+import com.mojang.serialization.MapCodec;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -11,16 +13,21 @@ import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLPaths;
+import net.neoforged.neoforge.common.conditions.ICondition;
 import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.NeoForgeRegistries;
 
 import java.nio.file.Path;
 import java.util.function.BiConsumer;
 import java.util.function.Supplier;
 
+@AutoService(ModPlatform.class)
 public class NeoForgePlatform implements ModPlatform {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(Eternal_starlight_vo.MOD_ID);
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(Eternal_starlight_vo.MOD_ID);
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, Eternal_starlight_vo.MOD_ID);
+    public static final DeferredRegister<MapCodec<? extends ICondition>> CONDITIONS =
+            DeferredRegister.create(NeoForgeRegistries.CONDITION_SERIALIZERS, Eternal_starlight_vo.MOD_ID);
     @Override
     public ModLoader getModLoader() {
         return ModLoader.NEOFORGE;
@@ -55,5 +62,6 @@ public class NeoForgePlatform implements ModPlatform {
         BLOCKS.register(modEventBus);
         ITEMS.register(modEventBus);
         CREATIVE_MODE_TABS.register(modEventBus);
+        CONDITIONS.register(modEventBus);
     }
 }

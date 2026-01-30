@@ -1,0 +1,23 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#eternal_starlight_vo:extra_copper_ore",
+  "features": [
+    "eternal_starlight_vo:lite/starlight_ore_copper_extra"
+  ],
+  "step": "underground_ores",
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:and",
+      "values": [
+        {
+          "type": "eternal_starlight_vo:config_flag",
+          "flag": "ExtraOrePerBiome"
+        },
+        {
+          "type": "eternal_starlight_vo:config_flag",
+          "flag": "ReduceOres"
+        }
+      ]
+    }
+  ]
+}

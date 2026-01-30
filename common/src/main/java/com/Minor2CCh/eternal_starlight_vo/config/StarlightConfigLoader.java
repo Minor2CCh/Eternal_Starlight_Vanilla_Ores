@@ -1,9 +1,9 @@
 package com.Minor2CCh.eternal_starlight_vo.config;
 
 import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
+import com.Minor2CCh.eternal_starlight_vo.platform.ModPlatform;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import net.fabricmc.loader.api.FabricLoader;
 
 import java.io.File;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class StarlightConfigLoader {
-    public static File DIR = FabricLoader.getInstance().getConfigDir().toFile();
+    private static final File DIR = ModPlatform.INSTANCE.getConfigPath().toFile();
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final String FILENAME = Eternal_starlight_vo.MOD_ID+".json";
     private static final Path CONFIG_PATH = Path.of(new File(DIR,FILENAME).getPath());

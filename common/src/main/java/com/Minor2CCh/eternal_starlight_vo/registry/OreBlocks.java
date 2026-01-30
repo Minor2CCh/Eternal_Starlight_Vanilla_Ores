@@ -1,6 +1,6 @@
 package com.Minor2CCh.eternal_starlight_vo.registry;
 
-import com.Minor2CCh.eternal_starlight_vo.Eternal_starlight_vo;
+import com.Minor2CCh.eternal_starlight_vo.platform.ModPlatform;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Block;
@@ -14,7 +14,7 @@ import net.minecraft.world.level.material.MapColor;
 import java.util.function.Supplier;
 
 public class OreBlocks {
-    public static Supplier<Block> GRIMSTONE_IRON_ORE = registerBlock(
+    public static final Supplier<Block> GRIMSTONE_IRON_ORE = registerBlock(
             "grimstone_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_ORE)));
     public static final Supplier<Block> VOIDSTONE_IRON_ORE = registerBlock(
@@ -28,6 +28,12 @@ public class OreBlocks {
             "haze_ice_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_IRON_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_IRON_ORE = registerBlock(
+            "nightfall_mud_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_IRON_ORE = registerBlock(
+            "packed_nightfall_mud_iron_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_COAL_ORE = registerBlock(
             "grimstone_coal_ore", () -> new DropExperienceBlock(UniformInt.of(0, 2),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.COAL_ORE)));
@@ -42,6 +48,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(UniformInt.of(0, 2),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COAL_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_COAL_ORE = registerBlock(
+            "nightfall_mud_coal_ore", () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_COAL_ORE = registerBlock(
+            "packed_nightfall_mud_coal_ore", () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_COPPER_ORE = registerBlock("grimstone_copper_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.COPPER_ORE)));
@@ -56,6 +68,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_COPPER_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_COPPER_ORE = registerBlock(
+            "nightfall_mud_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_COPPER_ORE = registerBlock(
+            "packed_nightfall_mud_copper_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_GOLD_ORE = registerBlock("grimstone_gold_ore",
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.GOLD_ORE)));
@@ -70,6 +88,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(ConstantInt.of(0),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_GOLD_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_GOLD_ORE = registerBlock(
+            "nightfall_mud_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_GOLD_ORE = registerBlock(
+            "packed_nightfall_mud_gold_ore", () -> new DropExperienceBlock(ConstantInt.of(0),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_LAPIS_ORE = registerBlock("grimstone_lapis_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.LAPIS_ORE)));
@@ -84,6 +108,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 5),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_LAPIS_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_LAPIS_ORE = registerBlock(
+            "nightfall_mud_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_LAPIS_ORE = registerBlock(
+            "packed_nightfall_mud_lapis_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_EMERALD_ORE = registerBlock("grimstone_emerald_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 7),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.EMERALD_ORE)));
@@ -98,6 +128,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 7),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_EMERALD_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_EMERALD_ORE = registerBlock(
+            "nightfall_mud_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_EMERALD_ORE = registerBlock(
+            "packed_nightfall_mud_emerald_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_DIAMOND_ORE = registerBlock("grimstone_diamond_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 7),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_ORE)));
@@ -112,6 +148,12 @@ public class OreBlocks {
             () -> new DropExperienceBlock(UniformInt.of(3, 7),
                     BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE_DIAMOND_ORE)
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_DIAMOND_ORE = registerBlock(
+            "nightfall_mud_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_DIAMOND_ORE = registerBlock(
+            "packed_nightfall_mud_diamond_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     public static final Supplier<Block> GRIMSTONE_QUARTZ_ORE = registerBlock("grimstone_quartz_ore",
             () -> new DropExperienceBlock(UniformInt.of(2, 5),
                     BlockBehaviour.Properties.of().mapColor(MapColor.STONE).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(3.0F, 3.0F)));
@@ -126,8 +168,14 @@ public class OreBlocks {
             () -> new DropExperienceBlock(UniformInt.of(2, 5),
                     BlockBehaviour.Properties.ofFullCopy(VOIDSTONE_QUARTZ_ORE.get())
                             .sound(SoundType.GLASS).mapColor(MapColor.ICE)));
+    public static final Supplier<Block> NIGHTFALL_MUD_QUARTZ_ORE = registerBlock(
+            "nightfall_mud_quartz_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.MUD).strength(3.0F).requiresCorrectToolForDrops()));
+    public static final Supplier<Block> PACKED_NIGHTFALL_MUD_QUARTZ_ORE = registerBlock(
+            "packed_nightfall_mud_quartz_ore", () -> new DropExperienceBlock(UniformInt.of(2, 5),
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.PACKED_MUD).strength(4.0F).requiresCorrectToolForDrops()));
     private static <T extends Block> Supplier<T> registerBlock(String id, Supplier<T> block){
-        return Eternal_starlight_vo.PLATFORM.blockRegister(id, block);
+        return ModPlatform.INSTANCE.blockRegister(id, block);
     }
     public static void init(){
     }
