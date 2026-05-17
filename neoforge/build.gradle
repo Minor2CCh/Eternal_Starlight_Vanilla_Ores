@@ -33,7 +33,7 @@ repositories {
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
-    implementation("curse.maven:eternal-starlight-1080592:7545975")
+    implementation("curse.maven:eternal-starlight-1080592:8102433")
     runtimeOnly("mezz.jei:jei-${mc_version}-neoforge:${jei_version}")
 
 
