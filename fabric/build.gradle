@@ -28,7 +28,7 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:$rootProject.fabric_loader_version"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:$rootProject.fabric_api_version"
-    modImplementation("curse.maven:eternal-starlight-1080592:7545991")
+    modImplementation("curse.maven:eternal-starlight-1080592:8102436")
     modRuntimeOnly("mezz.jei:jei-${mc_version}-fabric:${jei_version}")
 
 

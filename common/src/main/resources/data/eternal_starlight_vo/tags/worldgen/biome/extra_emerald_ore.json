@@ -1,5 +1,13 @@
 {
   "values": [
-    "eternal_starlight:starlight_permafrost_forest"
+    "eternal_starlight:starlight_permafrost_forest",
+    {
+      "id": "eternal_starlight:permafrost_peaks",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:starlight_taiga",
+      "required": false
+    }
   ]
 }

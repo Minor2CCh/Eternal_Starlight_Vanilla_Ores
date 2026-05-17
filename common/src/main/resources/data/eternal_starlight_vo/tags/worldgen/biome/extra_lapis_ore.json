@@ -1,6 +1,14 @@
 {
   "values": [
     "eternal_starlight:starlight_forest",
-    "eternal_starlight:starlight_dense_forest"
+    "eternal_starlight:starlight_dense_forest",
+    {
+      "id": "eternal_starlight:umbral_plains",
+      "required": false
+    },
+    {
+      "id": "eternal_starlight:glimmer_scrubland",
+      "required": false
+    }
   ]
 }

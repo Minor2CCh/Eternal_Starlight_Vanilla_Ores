@@ -1,5 +1,9 @@
 {
   "values": [
-    "eternal_starlight:crystallized_desert"
+    "eternal_starlight:crystallized_desert",
+    {
+      "id": "eternal_starlight:lucent_mycelium_isle",
+      "required": false
+    }
   ]
 }
