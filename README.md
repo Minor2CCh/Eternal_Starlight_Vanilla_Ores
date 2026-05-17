@@ -12,16 +12,23 @@ Eternal Ice and Haze Ice take slightly longer to refine than the other types.
 ## Extra Coal
 - Starlight Permafrost Forest
 - Crystallized Desert
+- Permafrost Peaks
+- Starlight Taiga
 ## Extra Copper,Gold
 - Torreya Forest
 - Scarlet Forest
 ## Extra Lapis
 - Starlight Forest
 - Starlight Dense Forest
+- Umbral Plains
+- Glimmer Scrubland
 ## Extra Emerald
 - Starlight Permafrost Forest
+- Permafrost Peaks
+- Starlight Taiga
 ## Extra Diamond
 - Crystallized Desert
+- Lucent Mycelium Isle
 ## Extra Quartz
 - Ether River
 - Shimmer River
